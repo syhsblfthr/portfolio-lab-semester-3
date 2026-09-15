@@ -1,0 +1,26 @@
+body {
+    background-color: #d7c5b5;
+}
+
+textarea {
+    resize: none;
+}
+
+header {
+    padding: 24px;
+    background-color: black;
+    color: white;
+    margin-bottom: 32px;
+}
+
+nav {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
