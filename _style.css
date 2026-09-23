@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #131316;
+    --color-secondary: #1C1C21;
+    --color-tertiary: #6A6B70;
+    --color-quaternary: #26262C;
+}
+
+@source inline("translate-y-0");
+@source inline("opacity-20");
+@source inline("duration-500");

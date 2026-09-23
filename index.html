@@ -3,58 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="projects/index.html">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<body class="bg-primary text-white text-justify px-80 py-10 selection:bg-white selection:text-black">
+    <div class="flex flex-col gap-y-12">
+        <header class="flex flex-col gap-y-2 opacity-0 transition-opacity duration-750 ease-linear">
+            <div class="border-b pb-3 border-b-tertiary">
+                <h1 class="text-4xl">Syahsabili Fithra Nasution</h1>
+            </div>
+            <nav class="border-b pb-3 border-b-tertiary flex gap-x-4">
+                <button data-nav="home" class="text-tertiary opacity-0 transition-opacity duration-750 ease-linear hover:text-white hover:cursor-pointer" type="button">Home</button>
+                <button data-nav="about" class="text-tertiary opacity-0 transition-opacity duration-750 ease-linear hover:text-white hover:cursor-pointer" type="button">About</button>
+                <button data-nav="portfolio" class="text-tertiary opacity-0 transition-opacity duration-750 ease-linear hover:text-white hover:cursor-pointer" type="button">Portfolio</button>
+                <button data-nav="contact" class="text-tertiary opacity-0 transition-opacity duration-750 ease-linear hover:text-white hover:cursor-pointer" type="button">Contact</button>
+            </nav>
+        </header>
 
-    <main>
-        <div id="text">
-            <section id="home">
-                <h1>Hello, I am Abil!</h1>
-            </section>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ducimus iure. Similique hic libero quia repellat perferendis error unde earum dolores? Amet alias voluptas quam, soluta dolor vitae dolorum ab. Dolorum consequatur odio sit suscipit id voluptates sunt, repudiandae distinctio, optio illo voluptate voluptas quidem assumenda maiores qui, quaerat cupiditate quae debitis? Natus hic, rem ea nihil maiores dolore! Amet eum impedit autem! Impedit laudantium maiores labore id quam a incidunt tempore ipsum? Eaque, non excepturi optio architecto aspernatur, fugit sequi voluptatibus fugiat doloribus vitae soluta iste, laudantium accusamus quidem atque ducimus rem nisi saepe aperiam impedit eum porro. Explicabo?</p>
-            </section>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form action="">
-                    <div class="form-input">
-                        <label for="nama">Nama:</label>
-                        <input id="nama" type="text">
+        <main class="flex gap-x-24 flex-row-reverse">
+            <div class="w-2/5 bg-secondary outline outline-tertiary p-6 rounded-md flex flex-col gap-y-8 items-center h-fit opacity-0 transition-opacity duration-750 ease-linear">
+                <span class="text-2xl font-semibold">Syahsabili Fithra Nasution</span>
+                <figure>
+                    <img src="pic 1.png" alt="">
+                    <figcaption class="text-center mt-1">Him in 2025</figcaption>
+                </figure>
+                <div class="w-full bg-quaternary rounded-md p-5 flex justify-between">
+                    <div class="flex flex-col font-bold gap-y-1">
+                        <span>Born</span>
+                        <span>Died</span>
+                        <span>Citizenship</span>
                     </div>
-                    <div class="form-input">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email">
+                    <div class="flex flex-col gap-y-1">
+                        <span>21 September 2007</span>
+                        <span>N/A (Alive)</span>
+                        <span>Indonesia</span>
                     </div>
-                    <div class="form-input">
-                        <label for="pesan">Pesan:</label>
-                        <textarea name="" id="pesan"></textarea>
+                </div>
+            </div>
+            <div class="w-3/4 flex flex-col gap-y-6">
+                <section class="opacity-0 transition-opacity duration-750 ease-linear" id="home">
+                    <p><b>Syahsabili Fithra Nasution</b> is a philosopher, logician, mathematician, epistemologist, ontologist, ethicist, metaphysician, dialectician, theoretical physicist, semiotician, axiologist, algebraist, analyst, geometer, topologist, number theorist, astrophysicist, cosmologist, quantum physicist, theoretical physicist, statistician, and others.</p>
+                </section>
+                <section class="opacity-0 transition-opacity duration-750 ease-linear" id="about">
+                    <div class="border-b pb-3 mb-3 border-b-tertiary">
+                        <h2 class="text-3xl">About</h2>
                     </div>
-                    <input type="submit">
-                </form>
-            </section>
+                    <p>The Honorable Lord Bartholomew Thistlethwaite-Ponsonby III, Room 42-B (The Door with the Brass Gargoyle Knockers), Floor 42, The Grand Clocktower Library Observatory Tower, The Ancient Keep of St. Jude-in-the-Fens, 7894-A Royal Cobblestone Manor Way (Corner of Whispering Willow Boulevard and the Alley of Forgotten Chimneys), Historic District of Oakhaven-under-Hill, Borough of High-Tide Landing, Parish of St. Peregrine-by-the-Marsh, East Yorkshire-on-Sea, OX42 9ZZ, United Kingdom, Earth, Solar System, Orion Arm, Milky Way Galaxy, Observable Universe.</p>
+                </section>
+                <section class="opacity-0 transition-opacity duration-750 ease-linear" id="portfolio">
+                    <div class="border-b pb-3 mb-3 border-b-tertiary">
+                        <h2 class="text-3xl">Portfolio</h2>
+                    </div>
+                    <div class="relative w-full overflow-clip gap-x-6 h-96 items-center group">
+                        <img class="carousel-navigation opacity-0 group-hover:opacity-100 transition-[opacity,scale] duration-250 active:scale-75 hover:cursor-pointer h-24 z-50 absolute left-0 top-1/2 -translate-y-1/2" src="larrow.svg" alt="">
+                        <img class="carousel-image opacity-100 transition-[opacity] duration-100 absolute w-full rounded-md" src="p1.png" alt="">
+                        <img class="carousel-image opacity-0 transition-[opacity] duration-100 absolute w-full rounded-md" src="p2.png" alt="">
+                        <img class="carousel-image opacity-0 transition-[opacity] duration-100 absolute w-full rounded-md" src="p3.png" alt="">
+                        <img class="carousel-navigation opacity-0 group-hover:opacity-100 transition-[opacity,scale] duration-250 active:scale-75 hover:cursor-pointer h-24 z-50 absolute right-0 top-1/2 -translate-y-1/2 rotate-180" src="larrow.svg" alt="">
+                    </div>
+                </section>
+                <section class="opacity-0 transition-opacity duration-750 ease-linear" id="contact">
+                    <div class="border-b pb-3 mb-3 border-b-tertiary">
+                        <h2 class="text-3xl">Contact</h2>
+                    </div>
+                    <div class="flex justify-between gap-x-4">
+                        <a href="https://github.com/syhsblfthr" target="_blank" class="flex flex-col items-center transition-colors duration-250 hover:outline-white bg-secondary w-full p-4 rounded-md outline gap-y-2 outline-tertiary">
+                            <img class="size-10" src="GitHub.svg" alt="">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="flex flex-col items-center hover:outline-white transition-colors duration-250 bg-secondary w-full p-4 rounded-md outline gap-y-2 outline-tertiary" target="_blank" href="https://www.linkedin.com/in/syahsabili-fithra-nasution-b828312bb/">
+                                <img class="size-10" src="LinkedIn.svg" alt="">
+                                <span>LinkedIn</span>
+                        </a>
+                        <a target="_blank" href="https://instagram.com/syhsbly" class="flex flex-col items-center transition-colors duration-250 hover:outline-white bg-secondary w-full p-4 rounded-md outline gap-y-2 outline-tertiary">
+                            <img class="size-10" src="instagram.png" alt="">
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            
+        </main>
 
-            <section id="follow">
-                <h2>Follow Me</h2>
-                <ul>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="https://github.com/syhsblfthr">GitHub</a></li>
-                    <li><a href="">LinkedIn</a></li>
-                </ul>
-            </section>
-        </div>
-        <img src="pic.jpg" alt="foto saya" width="300px">
-    </main>
+        <footer class="bg-white text-black text-center py-6 rounded-md outline-red-600 outline-2 opacity-0 transition-opacity duration-750 ease-linear">
+            <span>Made with <b class="text-red-600">Love</b></span>
+        </footer>
+    </div>
 </body>
 </html>
