@@ -46,11 +46,17 @@
             return;
         }
 
-        items[index].classList.add('lg:hidden');
+        items[index].classList.replace('lg:opacity-100', 'lg:opacity-0');
+        const _index = index;
+        setTimeout(() => {
+            console.log(_index);
+            items[_index].classList.add('lg:hidden');
+        }, 100);
         
         index -= 1;
 
         items[index].classList.remove('lg:hidden');
+        items[index].classList.replace('lg:opacity-0', 'lg:opacity-100');
     });
 
     navigation[1].addEventListener('click', () => {
@@ -58,10 +64,16 @@
             return;
         }
 
-        items[index].classList.add('lg:hidden');
+        items[index].classList.replace('lg:opacity-100', 'lg:opacity-0');
+        const _index = index;
+        setTimeout(() => {
+            console.log(_index);
+            items[_index].classList.add('lg:hidden');
+        }, 100);
         
         index += 1;
 
         items[index].classList.remove('lg:hidden');
+        items[index].classList.replace('lg:opacity-0', 'lg:opacity-100');
     });
 })();
