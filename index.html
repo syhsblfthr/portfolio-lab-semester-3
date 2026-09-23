@@ -7,11 +7,11 @@
     <script src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
-<body class="bg-primary text-white text-justify px-80 py-10 selection:bg-white selection:text-black">
+<body class="bg-primary text-white text-justify px-[10%] py-10 selection:bg-white selection:text-black">
     <div class="flex flex-col gap-y-12">
         <header class="flex flex-col gap-y-2 opacity-0 transition-opacity duration-750 ease-linear">
             <div class="border-b pb-3 border-b-tertiary">
-                <h1 class="text-4xl">Syahsabili Fithra Nasution</h1>
+                <h1 class="text-2xl lg:text-4xl">Syahsabili Fithra Nasution</h1>
             </div>
             <nav class="border-b pb-3 border-b-tertiary flex gap-x-4">
                 <button data-nav="home" class="text-tertiary opacity-0 transition-opacity duration-750 ease-linear hover:text-white hover:cursor-pointer" type="button">Home</button>
@@ -21,14 +21,14 @@
             </nav>
         </header>
 
-        <main class="flex gap-x-24 flex-row-reverse">
-            <div class="w-2/5 bg-secondary outline outline-tertiary p-6 rounded-md flex flex-col gap-y-8 items-center h-fit opacity-0 transition-opacity duration-750 ease-linear">
-                <span class="text-2xl font-semibold">Syahsabili Fithra Nasution</span>
+        <main class="flex flex-col items-center gap-24 lg:flex-row-reverse lg:items-start">
+            <div class="w-fit lg:w-2/5 bg-secondary outline outline-tertiary p-6 rounded-md flex flex-col gap-y-8 items-center h-fit opacity-0 transition-opacity duration-750 ease-linear">
+                <span class="text-xl font-semibold">Syahsabili Fithra Nasution</span>
                 <figure>
-                    <img src="pic 1.png" alt="">
+                    <img src="assets/picture.png" alt="">
                     <figcaption class="text-center mt-1">Him in 2025</figcaption>
                 </figure>
-                <div class="w-full bg-quaternary rounded-md p-5 flex justify-between">
+                <div class="w-full bg-quaternary rounded-md p-5 flex justify-between text-sm">
                     <div class="flex flex-col font-bold gap-y-1">
                         <span>Born</span>
                         <span>Died</span>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-3/4 flex flex-col gap-y-6">
+            <div class="w-full lg:w-3/4 flex flex-col gap-y-6">
                 <section class="opacity-0 transition-opacity duration-750 ease-linear" id="home">
                     <p><b>Syahsabili Fithra Nasution</b> is a philosopher, logician, mathematician, epistemologist, ontologist, ethicist, metaphysician, dialectician, theoretical physicist, semiotician, axiologist, algebraist, analyst, geometer, topologist, number theorist, astrophysicist, cosmologist, quantum physicist, theoretical physicist, statistician, and others.</p>
                 </section>
@@ -55,12 +55,12 @@
                     <div class="border-b pb-3 mb-3 border-b-tertiary">
                         <h2 class="text-3xl">Portfolio</h2>
                     </div>
-                    <div class="relative w-full overflow-clip gap-x-6 h-96 items-center group">
-                        <img class="carousel-navigation opacity-0 group-hover:opacity-100 transition-[opacity,scale] duration-250 active:scale-75 hover:cursor-pointer h-24 z-50 absolute left-0 top-1/2 -translate-y-1/2" src="larrow.svg" alt="">
-                        <img class="carousel-image opacity-100 transition-[opacity] duration-100 absolute w-full rounded-md" src="p1.png" alt="">
-                        <img class="carousel-image opacity-0 transition-[opacity] duration-100 absolute w-full rounded-md" src="p2.png" alt="">
-                        <img class="carousel-image opacity-0 transition-[opacity] duration-100 absolute w-full rounded-md" src="p3.png" alt="">
-                        <img class="carousel-navigation opacity-0 group-hover:opacity-100 transition-[opacity,scale] duration-250 active:scale-75 hover:cursor-pointer h-24 z-50 absolute right-0 top-1/2 -translate-y-1/2 rotate-180" src="larrow.svg" alt="">
+                    <div class="group relative lg:w-full lg:overflow-clip h-96 gap-6 items-center">
+                        <img class="carousel-navigation opacity-0 group-hover:opacity-100 transition-[opacity,scale] duration-250 active:scale-75 hover:cursor-pointer h-24 z-50 absolute left-0 top-1/2 -translate-y-1/2" src="assets/arrow.svg" alt="">
+                        <img class="carousel-image lg:opacity-100 transition-[opacity] duration-100 lg:absolute w-full rounded-md" src="assets/projects/one.png" alt="">
+                        <img class="carousel-image lg:opacity-0 transition-[opacity] duration-100 lg:absolute w-full rounded-md" src="assets/projects/two.png" alt="">
+                        <img class="carousel-image lg:opacity-0 transition-[opacity] duration-100 lg:absolute w-full rounded-md" src="assets/projects/three.png" alt="">
+                        <img class="carousel-navigation opacity-0 group-hover:opacity-100 transition-[opacity,scale] duration-250 active:scale-75 hover:cursor-pointer h-24 z-50 absolute right-0 top-1/2 -translate-y-1/2 rotate-180" src="assets/arrow.svg" alt="">
                     </div>
                 </section>
                 <section class="opacity-0 transition-opacity duration-750 ease-linear" id="contact">
@@ -69,15 +69,15 @@
                     </div>
                     <div class="flex justify-between gap-x-4">
                         <a href="https://github.com/syhsblfthr" target="_blank" class="flex flex-col items-center transition-colors duration-250 hover:outline-white bg-secondary w-full p-4 rounded-md outline gap-y-2 outline-tertiary">
-                            <img class="size-10" src="GitHub.svg" alt="">
+                            <img class="size-10" src="assets/github.svg" alt="">
                             <span>GitHub</span>
                         </a>
                         <a class="flex flex-col items-center hover:outline-white transition-colors duration-250 bg-secondary w-full p-4 rounded-md outline gap-y-2 outline-tertiary" target="_blank" href="https://www.linkedin.com/in/syahsabili-fithra-nasution-b828312bb/">
-                                <img class="size-10" src="LinkedIn.svg" alt="">
+                                <img class="size-10" src="assets/linkedin.svg" alt="">
                                 <span>LinkedIn</span>
                         </a>
                         <a target="_blank" href="https://instagram.com/syhsbly" class="flex flex-col items-center transition-colors duration-250 hover:outline-white bg-secondary w-full p-4 rounded-md outline gap-y-2 outline-tertiary">
-                            <img class="size-10" src="instagram.png" alt="">
+                            <img class="size-10" src="assets/instagram.png" alt="">
                             <span>Instagram</span>
                         </a>
                     </div>

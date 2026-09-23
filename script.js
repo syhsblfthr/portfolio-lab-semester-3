@@ -46,11 +46,11 @@
             return;
         }
 
-        items[index].classList.replace('opacity-100', 'opacity-0');
+        items[index].classList.replace('lg:opacity-100', 'lg:opacity-0');
         
         index -= 1;
 
-        items[index].classList.replace('opacity-0', 'opacity-100');
+        items[index].classList.replace('lg:opacity-0', 'lg:opacity-100');
     });
 
     navigation[1].addEventListener('click', () => {
@@ -58,10 +58,10 @@
             return;
         }
 
-        items[index].classList.replace('opacity-100', 'opacity-0');
+        items[index].classList.replace('lg:opacity-100', 'lg:opacity-0');
         
         index += 1;
 
-        items[index].classList.replace('opacity-0', 'opacity-100');
+        items[index].classList.replace('lg:opacity-0', 'lg:opacity-100');
     });
 })();
