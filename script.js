@@ -46,11 +46,11 @@
             return;
         }
 
-        items[index].classList.replace('lg:opacity-100', 'lg:opacity-0');
+        items[index].classList.add('lg:hidden');
         
         index -= 1;
 
-        items[index].classList.replace('lg:opacity-0', 'lg:opacity-100');
+        items[index].classList.remove('lg:hidden');
     });
 
     navigation[1].addEventListener('click', () => {
@@ -58,10 +58,10 @@
             return;
         }
 
-        items[index].classList.replace('lg:opacity-100', 'lg:opacity-0');
+        items[index].classList.add('lg:hidden');
         
         index += 1;
 
-        items[index].classList.replace('lg:opacity-0', 'lg:opacity-100');
+        items[index].classList.remove('lg:hidden');
     });
 })();
